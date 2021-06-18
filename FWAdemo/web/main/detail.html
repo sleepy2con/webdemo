@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://thefwa.com/favicons/favicon-96x96.png" sizes="96x96">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEb期末首页</title>
+    <link rel="stylesheet" href="../../css/main.css" />
+</head>
+<style>
+
+</style>
+
+<body class="shuzhi">
+    <div id="header"></div>
+    <div class="mainbody shuzhi">
+        <div class="indexFirstWebContainer hengzhi">
+            <div class="shuzhi IndexLeftBox">
+                <div class="hengzhi theIndexLeftBox_title justifyBetween">
+                    <div class="shuzhi dataBoxContainer">
+                        <div>11</div>
+                        <h3>十二月</h3>
+                        <h3 style="color: rgb(73, 73, 73);">每日FWA</h3>
+                    </div>
+                    <div>
+                        <button class="theIndexLeftBox_titlebutton">分享+</button>
+                    </div>
+                </div>
+                <div class="historyRecodeDiv shuzhi">
+                    <div>网站</div>
+                    <h1 style="font-weight: lighter; font-size: 45px;">Squarespace浏览器历史记录</h1>
+                    <div>若干若干</div>
+                </div>
+            </div>
+            <div>
+                <div class="slideshow-container">
+                    <div class="mySlides3 fade">
+                        <img src="../../pics/slide4/e1.png" style="width:100%">
+                    </div>
+                    <div class="mySlides3 fade">
+                        <img src="../../pics/slide4/e2.png" style="width:100%">
+                    </div>
+                    <div class="mySlides3 fade">
+                        <img src="../../pics/slide4/e3.png" style="width:100%">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="guodubar hengzhi alignC justifyBetween">
+            <div class="shuzhi guodubarMedium">
+                <div class="FAWAwardsCount">FWA评判统计：</div>
+                <div class="hengzhi justifyAround thePoint">
+                    <div class="hengzhi justifyAround" style="width:50%; border:1px solid #ECECEC;">
+                        <div>要点:</div>
+                        <h1>84</h1>
+                    </div>
+                    <div class="hengzhi"
+                        style="justify-content:space-around; width:50%; border-left:1px solid rgb(224, 224, 224)">
+                        <div>天:</div>
+                        <h1>2</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="theDetailDiv hengzhi">
+            <div class="theinnerDetailDiv">
+                <div>描述</div>
+                <h1>
+                    NASA的Frontier Development Lab与Google
+                    Cloud和Intel合作，汇集了来自各个领域的研究人员，通过AI技术解决了科学难题。这个微型的电影网站庆祝FDL的突破以及使之成为现实的技术。
+                </h1>
+            </div>
+            <div class="hengzhi alignC guodubarRight2" style="">
+                <button class="theIndexLeftBox_titlebutton2" style="margin-top: 30px;">看案例</button>
+                <button class="btnlogin" style="margin: 30px 30px 0 0;">查看网页<span
+                        class="iconfont icon-youjiantou"></span></button>
+            </div>
+        </div>
+        <div class="hengzhi" style="justify-content: flex-end;background-color: #ececec;">
+            <div class="scoreDiv shuzhi">
+                <div>评分</div>
+                <div>方块空间(7FWAS)</div>
+            </div>
+        </div>
+
+        <div class="hengzhi">
+            <div class="videoDiv2">
+                <video autoplay="" loop="" preload="auto">
+                    <source src="../../video/v1.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+        </div>
+
+        <div class="hengzhi justifyBetween">
+            <div class="scoreDiv2 shuzhi">
+                <div>评分</div>
+                <div>方块空间(7FWAS)</div>
+            </div>
+            <div class="shuzhi guodubarMedium">
+                <div class="FAWAwardsCount">FWA奖励统计：</div>
+                <div class="hengzhi justifyAround thePoint">
+                    <div class="hengzhi justifyAround" style="width:50%; border:1px solid #ECECEC;">
+                        <div>要点:</div>
+                        <h1>84</h1>
+                    </div>
+                    <div class="hengzhi"
+                        style="justify-content:space-around; width:50%; border-left:1px solid rgb(224, 224, 224)">
+                        <div>天:</div>
+                        <h1>2</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div id="footer"></div>
+    <script src="../../js/jquery.min.js"></script>
+    <script>
+        var slideIndex3 = 0;
+        showSlides3();
+
+        function showSlides3() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides3");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex3++;
+            // console.log(slides.length);
+            if (slideIndex3 > slides.length) {
+                slideIndex3 = 1
+            }
+
+            slides[slideIndex3 - 1].style.display = "block";
+            // console.log(slideIndex);
+            setTimeout(showSlides3, 2000); // Change image every 2 seconds
+        }
+        $(function () {
+            $('#header').load('Header.html');
+            $('#footer').load('footer.html')
+
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作室资料</title>
+    <link rel="stylesheet" href="../../css/user.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="mainbody">
+        <div class="shuzhi">
+            <div class="hengzhi usertitle">
+                <h2>工作室资料</h2>
+                <span>[5479]</span>
+            </div>
+            <div class="hengzhi userbody justifyBetween">
+                <div class="shuzhi" style="width: 100%;">
+                    <input placeholder="搜索代理商或位置"/>
+                    <table class="userInfoTable" id="userInfoTable">
+                        <tr>
+                            <th></th>
+                            <th class="addpad">名称</th>
+                            <th class="addpad">总</th>
+                            <th class="addpad">FOTD</th>
+                            <th class="addpad">TCEA</th>
+                            <th class="addpad">FOTM</th>
+                            <th class="addpad">FOTY</th>
+                            <th class="addpad">TCEAY</th>
+                            <th class="addpad">PCA</th>
+                            <th class="addpad">MOTD</th>
+                        </tr>
+                        <tr>
+                            <td class="addpad" style="padding: 0;width:96.8px;"><img src="../../pics/icons/usericon.png"></td>
+                            <td class="addpad shuzhi">
+                                <div>Anrick</div>
+                                <div>Los Angeles</div>
+                            </td>
+                            <td class="addpad">13</td>
+                            <td class="addpad">13</td>
+                            <td class="addpad">13</td>
+                            <td class="addpad">13</td>
+                            <td class="addpad">13</td>
+                            <td class="addpad">13</td>
+                            <td class="addpad">13</td>
+                            <td class="addpad">13</td>
+
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="userContainer shuzhi">
+                    <div>显示</div>
+                    <h2>1-36</h2>
+                    <div>共5479页</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+    <script src="../../js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#header').load('../main/Header.html');
+            $('#footer').load('../main/footer.html')
+            for(var i=0;i<10;i++){
+                $('#userInfoTable').append('<tr>'+
+                            '<td class="addpad" style="padding: 0;width:96.8px;"><img src="../../pics/icons/usericon.png"></td>'+
+                            '<td class="addpad shuzhi">'+
+                             '   <div>Anrick</div>'+
+                              '  <div>Los Angeles</div>'+
+                            '</td>'+
+                            '<td class="addpad">13</td>'+
+                            '<td class="addpad">13</td>'+
+                            '<td class="addpad">13</td>'+
+                            '<td class="addpad">13</td>'+
+                            '<td class="addpad">13</td>'+
+                            '<td class="addpad">13</td>'+
+                            '<td class="addpad">13</td>'+
+                            '<td class="addpad">13</td>'+
+                        '</tr>')
+            }
+
+        })
+    </script>
+</body>
+</html>

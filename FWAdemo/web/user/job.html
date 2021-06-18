@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作招聘</title>
+    <link rel="stylesheet" href="../../css/user.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="mainbody">
+        <div class="shuzhi">
+            <div class="hengzhi usertitle">
+                <h2>工作招聘</h2>
+                <span>[5479]</span>
+            </div>
+            <div class="hengzhi userbody justifyBetween">
+                <div class="shuzhi" style="width: 100%;" id="jobContainer">
+                    <input placeholder="搜索代理商或位置" />
+                    <div class="hengzhi">
+                        <div class="shuzhi theJobDiv">
+                            <div class="showJobBtn">
+                                <div style="color: rgb(15, 15, 15);font-size: 25px;">XX设计师</div>
+                                <div>XX公司</div>
+                                <div class="hengzhi justifyBetween">
+                                    <div>X国X市</div>
+                                    <div>X123年X月X日</div>
+                                </div>
+                            </div>
+                            <button class="revBtn">阅读更多</button>
+                        </div>
+                        <div class="shuzhi theJobDiv">
+                            <div class="showJobBtn">
+                                <div style="color: rgb(15, 15, 15);font-size: 25px;">XX设计师</div>
+                                <div>XX公司</div>
+                                <div class="hengzhi justifyBetween">
+                                    <div>X国X市</div>
+                                    <div>X123年X月X日</div>
+                                </div>
+                            </div>
+                            <button class="revBtn">阅读更多</button>
+                        </div>
+                        <div class="shuzhi theJobDiv">
+                            <div class="showJobBtn">
+                                <div style="color: rgb(15, 15, 15);font-size: 25px;">XX设计师</div>
+                                <div>XX公司</div>
+                                <div class="hengzhi justifyBetween">
+                                    <div>X国X市</div>
+                                    <div>X123年X月X日</div>
+                                </div>
+                            </div>
+                            <button class="revBtn">阅读更多</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="userContainer shuzhi">
+                    <div>显示</div>
+                    <h2>所有工作</h2>
+                    <div>总共X个</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer"></div>
+    <script src="../../js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#header').load('../main/Header.html');
+            $('#footer').load('../main/footer.html')
+            for (var i = 0; i < 3; i++) {
+                $('#jobContainer').append('<div class="hengzhi">'+
+                    ' <div class="shuzhi theJobDiv">'+
+                            '  <div class="showJobBtn">'+
+                                '   <div style="color: rgb(15, 15, 15);font-size: 25px;">XX设计师</div>'+
+                                '   <div>XX公司</div>'+
+                                '  <div class="hengzhi justifyBetween">'+
+                                    '     <div>X国X市</div>'+
+                                    '    <div>X123年X月X日</div>'+
+                                    '   </div>'+
+                                '  </div>'+
+                            '   <button class="revBtn">阅读更多</button>'+
+                            ' </div>'+
+                        ' <div class="shuzhi theJobDiv">'+
+                            '  <div class="showJobBtn">'+
+                                '   <div style="color: rgb(15, 15, 15);font-size: 25px;">XX设计师</div>'+
+                                '  <div>XX公司</div>'+
+                                '  <div class="hengzhi justifyBetween">'+
+                                    '     <div>X国X市</div>'+
+                                    '     <div>X123年X月X日</div>'+
+                                    '    </div>'+
+                                '  </div>'+
+                            ' <button class="revBtn">阅读更多</button>'+
+                            '  </div>'+
+                        ' <div class="shuzhi theJobDiv">'+
+                            '  <div class="showJobBtn">'+
+                                '   <div style="color: rgb(15, 15, 15);font-size: 25px;">XX设计师</div>'+
+                                '   <div>XX公司</div>'+
+                                '    <div class="hengzhi justifyBetween">'+
+                                    '      <div>X国X市</div>'+
+                                    '    <div>X123年X月X日</div>'+
+                                    '  </div>'+
+                                '</div>'+
+                            '<button class="revBtn">阅读更多</button>'+
+                            '</div>'+
+                    '</div>');
+            }
+
+            $('.revBtn').click(function(){
+                window.location.href="jobDetail.html"
+            })
+        })
+    </script>
+</body>
+
+</html>
